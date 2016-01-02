@@ -1,13 +1,15 @@
 //
-//  MMSegObjC.m
-//  MMSegObjC
+//  ViewController.h
+//  Sample
 //
 //  Created by Andrew(Zhiyong) Yang on 12/30/15.
 //  Copyright © 2015 FoolDragon. All rights reserved.
 //
 
-#import "MMSegObjC.h"
+#import <UIKit/UIKit.h>
 
-@implementation MMSegObjC
+@interface ViewController : UIViewController
+
 
 @end
+

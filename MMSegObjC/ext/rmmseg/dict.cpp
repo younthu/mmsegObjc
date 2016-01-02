@@ -35,8 +35,8 @@ namespace rmmseg
 
     static size_t n_bins = init_size;
     static size_t n_entries = 0;
-    static Entry **bins = static_cast<Entry **>(std::calloc(init_size,
-                                                            sizeof(Entry *)));
+    static Entry **bins = NULL;//static_cast<Entry **>(std::calloc(init_size,
+//                                                            sizeof(Entry *)));
 
     static size_t new_size()
     {
@@ -126,6 +126,11 @@ namespace rmmseg
         {
             unsigned int hash_val = hash(word->text, word->nbytes);
             unsigned int h = hash_val % n_bins;
+            
+            if (NULL == bins) {
+                bins = static_cast<Entry **>(std::calloc(init_size,
+                                                  sizeof(Entry *)));
+            }
             Entry *entry = bins[h];
             if (!entry)
             {

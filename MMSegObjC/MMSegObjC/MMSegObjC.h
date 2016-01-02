@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface MMSegObjC : NSObject
-
++ (void)initializeEngine;
++ (NSArray<NSString*> *)getTokensFromString:(NSString*)text;
 @end

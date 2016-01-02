@@ -21,7 +21,7 @@ namespace rmmseg
     {
         void *mem = _pool_base;
         
-        if (len <= _pool_size)
+        if (len <= _pool_size && 0 != _pool_base)
         {
             _pool_size -= len;
             _pool_base += len;

@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		82C5AABF1C33FDDD00A7564F /* MMSegObjC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 82C5AABE1C33FDDD00A7564F /* MMSegObjC.h */; };
-		82C5AAC11C33FDDD00A7564F /* MMSegObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C5AAC01C33FDDD00A7564F /* MMSegObjC.m */; };
+		82C5AAC11C33FDDD00A7564F /* MMSegObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 82C5AAC01C33FDDD00A7564F /* MMSegObjC.mm */; };
 		82C5AAD51C33FE4400A7564F /* algor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82C5AAC91C33FE4400A7564F /* algor.cpp */; };
 		82C5AAD61C33FE4400A7564F /* dict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82C5AACC1C33FE4400A7564F /* dict.cpp */; };
 		82C5AAD71C33FE4400A7564F /* memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82C5AACF1C33FE4400A7564F /* memory.cpp */; };
-		82C5AADA1C34011100A7564F /* data in CopyFiles */ = {isa = PBXBuildFile; fileRef = 82C5AAD91C33FF6300A7564F /* data */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,7 +21,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				82C5AADA1C34011100A7564F /* data in CopyFiles */,
 				82C5AABF1C33FDDD00A7564F /* MMSegObjC.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -30,21 +28,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		82A38CE51C3776F300FA287D /* words.dic */ = {isa = PBXFileReference; explicitFileType = compiled; fileEncoding = 4; name = words.dic; path = data/words.dic; sourceTree = "<group>"; };
+		82A38CE61C3776F300FA287D /* chars.dic */ = {isa = PBXFileReference; explicitFileType = compiled; fileEncoding = 4; name = chars.dic; path = data/chars.dic; sourceTree = "<group>"; };
 		82C5AABB1C33FDDD00A7564F /* libMMSegObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMSegObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C5AABE1C33FDDD00A7564F /* MMSegObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMSegObjC.h; sourceTree = "<group>"; };
-		82C5AAC01C33FDDD00A7564F /* MMSegObjC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMSegObjC.m; sourceTree = "<group>"; };
+		82C5AAC01C33FDDD00A7564F /* MMSegObjC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MMSegObjC.mm; sourceTree = "<group>"; };
 		82C5AAC91C33FE4400A7564F /* algor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = algor.cpp; sourceTree = "<group>"; };
 		82C5AACA1C33FE4400A7564F /* algor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = algor.h; sourceTree = "<group>"; };
 		82C5AACB1C33FE4400A7564F /* chunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chunk.h; sourceTree = "<group>"; };
 		82C5AACC1C33FE4400A7564F /* dict.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dict.cpp; sourceTree = "<group>"; };
 		82C5AACD1C33FE4400A7564F /* dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict.h; sourceTree = "<group>"; };
-		82C5AACE1C33FE4400A7564F /* extconf.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = extconf.rb; sourceTree = "<group>"; };
 		82C5AACF1C33FE4400A7564F /* memory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = memory.cpp; sourceTree = "<group>"; };
 		82C5AAD01C33FE4400A7564F /* memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory.h; sourceTree = "<group>"; };
 		82C5AAD21C33FE4400A7564F /* rules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rules.h; sourceTree = "<group>"; };
 		82C5AAD31C33FE4400A7564F /* token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = token.h; sourceTree = "<group>"; };
 		82C5AAD41C33FE4400A7564F /* word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = word.h; sourceTree = "<group>"; };
-		82C5AAD91C33FF6300A7564F /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,8 @@
 		82C5AAB21C33FDDD00A7564F = {
 			isa = PBXGroup;
 			children = (
-				82C5AAD91C33FF6300A7564F /* data */,
+				82A38CE51C3776F300FA287D /* words.dic */,
+				82A38CE61C3776F300FA287D /* chars.dic */,
 				82C5AAC71C33FE4400A7564F /* ext */,
 				82C5AABD1C33FDDD00A7564F /* MMSegObjC */,
 				82C5AABC1C33FDDD00A7564F /* Products */,
@@ -80,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				82C5AABE1C33FDDD00A7564F /* MMSegObjC.h */,
-				82C5AAC01C33FDDD00A7564F /* MMSegObjC.m */,
+				82C5AAC01C33FDDD00A7564F /* MMSegObjC.mm */,
 			);
 			path = MMSegObjC;
 			sourceTree = "<group>";
@@ -101,7 +100,6 @@
 				82C5AACB1C33FE4400A7564F /* chunk.h */,
 				82C5AACC1C33FE4400A7564F /* dict.cpp */,
 				82C5AACD1C33FE4400A7564F /* dict.h */,
-				82C5AACE1C33FE4400A7564F /* extconf.rb */,
 				82C5AACF1C33FE4400A7564F /* memory.cpp */,
 				82C5AAD01C33FE4400A7564F /* memory.h */,
 				82C5AAD21C33FE4400A7564F /* rules.h */,
@@ -168,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82C5AAD71C33FE4400A7564F /* memory.cpp in Sources */,
-				82C5AAC11C33FDDD00A7564F /* MMSegObjC.m in Sources */,
+				82C5AAC11C33FDDD00A7564F /* MMSegObjC.mm in Sources */,
 				82C5AAD51C33FE4400A7564F /* algor.cpp in Sources */,
 				82C5AAD61C33FE4400A7564F /* dict.cpp in Sources */,
 			);
@@ -294,6 +292,7 @@
 				82C5AAC61C33FDDD00A7564F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
