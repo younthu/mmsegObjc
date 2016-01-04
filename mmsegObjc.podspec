@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "MMSegObjc"
+  s.name         = "mmsegObjc"
   s.version      = "0.0.1"
   s.summary      = "Objective C wrapper of http://rmmseg-cpp.rubyforge.org/"
 
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+  Objective C Wrapper for rmmseg-cpp,http://rmmseg-cpp.rubyforge.org/
                    DESC
 
   s.homepage     = "https://github.com/younthu/mmsegObjc"
@@ -63,8 +64,8 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  #s.platform     = :ios
+  s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -90,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = MMSegObjC/**/*.{h,cpp,mm}"
+  s.source_files  = "MMSegObjC/**/*.{h,cpp,mm}"
   s.exclude_files = "Classes/Exclude"
 
   s.public_header_files = "MMSegObjC/MMSegObjC/*.h"
