@@ -1,2 +1,2 @@
 
-pod 'mmsegObjc'
+pod 'mmsegObjc', :git => "https://github.com/younthu/mmsegObjc"
