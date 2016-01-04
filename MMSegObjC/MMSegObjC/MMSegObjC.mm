@@ -9,7 +9,6 @@
 #import "MMSegObjC.h"
 #import "algor.h"
 #import "dict.h"
-static rmmseg::Algorithm *_algo;
 using namespace rmmseg;
 
 
@@ -43,7 +42,7 @@ using namespace rmmseg;
 }
 
 + (NSArray<NSString*> *)getTokensFromString:(NSString*)text{
-    rmmseg::Algorithm algo = rmmseg::Algorithm(text.UTF8String,strlen(text.UTF8String));// don't use test.length, it returns count of characters instead of bytes.
+    rmmseg::Algorithm algo = rmmseg::Algorithm(text.UTF8String,(int)strlen(text.UTF8String));// don't use test.length, it returns count of characters instead of bytes.
     
     NSMutableArray<NSString*> *result = [NSMutableArray array];
     
