@@ -92,6 +92,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "MMSegObjC/**/*.{h,cpp,mm}"
+  s.resources      = "MMSegObjC/**/*.dic"
   s.exclude_files = "Classes/Exclude"
 
   s.public_header_files = "MMSegObjC/MMSegObjC/*.h"
