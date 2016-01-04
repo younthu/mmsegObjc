@@ -3,6 +3,8 @@ Objective C wrapper of rmmseg-cpp, http://rmmseg-cpp.rubyforge.org/
 
 rmmseg-cpp is Chinese word segmentation library for Ruby in C++,https://github.com/pluskid/rmmseg-cpp
 
+Supports both iOS and OSX.
+
 # Usage
 Install via pod
 ```
