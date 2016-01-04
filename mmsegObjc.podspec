@@ -64,10 +64,10 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios, :osx
+  s.platform     = :ios, "7.0", :osx, "10.7"
   #s.platform     = :ios, "7.0"
-  s.ios.platform = :ios, '7.0'
-  s.osx.platform = :iox, '10.7'
+  #s.ios.platform = :ios, '7.0'
+  #s.osx.platform = :iox, '10.7'
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -122,7 +122,7 @@ Pod::Spec.new do |s|
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
-  s.library = "libc++"
+  s.library = "c++"
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 

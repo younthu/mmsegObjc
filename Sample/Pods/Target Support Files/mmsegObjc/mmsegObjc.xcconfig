@@ -1,5 +1,0 @@
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/mmsegObjc" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/mmsegObjc"
-OTHER_LDFLAGS = -l"c++"
-PODS_ROOT = ${SRCROOT}
-SKIP_INSTALL = YES
