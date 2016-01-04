@@ -18,11 +18,11 @@ Sample code
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    // Init mmseg
+    
     NSArray<NSString*> *arr = [MMSegObjC getTokensFromString:@"我们都喜欢用 Ruby"];
     
     for (NSString *token in arr) {
-        NSLog(@"%@", token); # 我们 都 喜欢 用 Ruby
+        NSLog(@"%@", token); // 我们 都 喜欢 用 Ruby
     }
 }
 ```
