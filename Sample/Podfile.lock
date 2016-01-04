@@ -10,10 +10,10 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   mmsegObjc:
-    :commit: e77158ebad2ba985b2837fcd34b2ede60de1c8a2
+    :commit: 00b40d4e0e65c107fc8c1fac15c7ff5eb1b2b75b
     :git: https://github.com/younthu/mmsegObjc
 
 SPEC CHECKSUMS:
-  mmsegObjc: 29da39a32722208ff9f77ab401a361ce01a92432
+  mmsegObjc: 3ef8b8533090dbcf18c2805bc5940fca965201e7
 
 COCOAPODS: 0.39.0
