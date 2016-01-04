@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <MMSegObjC/MMsegObjC.h>
 
 @implementation ViewController
 
@@ -14,6 +15,11 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
+    NSArray<NSString*> *arr = [MMSegObjC getTokensFromString:@"我们都喜欢用 Ruby"];
+    
+    for (NSString *token in arr) {
+        NSLog(@"%@", token); // 我们 都 喜欢 用 Ruby
+    }
 }
 
 - (void)setRepresentedObject:(id)representedObject {

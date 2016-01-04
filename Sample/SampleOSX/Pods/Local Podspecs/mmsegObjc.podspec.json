@@ -11,9 +11,6 @@
   "authors": {
     "Andrew Yang": "evil_eve_live@outlook.com"
   },
-  "platforms": {
-    "ios": "7.0"
-  },
   "source": {
     "git": "https://github.com/younthu/mmsegObjc.git",
     "tag": "v0.0.1"
