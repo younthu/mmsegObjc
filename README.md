@@ -1,5 +1,7 @@
 # mmsegObjc
-Objective C wrapper of http://rmmseg-cpp.rubyforge.org/
+Objective C wrapper of rmmseg-cpp, http://rmmseg-cpp.rubyforge.org/
+
+rmmseg-cpp is Chinese word segmentation library for Ruby in C++,https://github.com/pluskid/rmmseg-cpp
 
 # Usage
 Install via pod
