@@ -1,0 +1,19 @@
+PODS:
+  - mmsegObjc (0.0.1)
+
+DEPENDENCIES:
+  - mmsegObjc (from `https://github.com/younthu/mmsegObjc`)
+
+EXTERNAL SOURCES:
+  mmsegObjc:
+    :git: https://github.com/younthu/mmsegObjc
+
+CHECKOUT OPTIONS:
+  mmsegObjc:
+    :commit: e77158ebad2ba985b2837fcd34b2ede60de1c8a2
+    :git: https://github.com/younthu/mmsegObjc
+
+SPEC CHECKSUMS:
+  mmsegObjc: 29da39a32722208ff9f77ab401a361ce01a92432
+
+COCOAPODS: 0.39.0
