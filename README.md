@@ -37,6 +37,14 @@ Sample code
     }
 }
 ```
+# Dictionaries
+As far as v0.0.3, we used dictionaries from rmmseg-cpp, the pod will install dictonaries by default.
+
+To make it simple, we exposed no interface for loading extra dictionaries. If you have dictionaries trained by yourself, it should not be so hard to load it, by looking into 
+
+```objc
+[MMSegObjC initializeEngine];
+```
 
 # Log
 
