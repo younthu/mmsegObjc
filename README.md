@@ -8,7 +8,7 @@ Supports both iOS and OSX.
 # Usage
 Install via pod
 ```
-pod 'mmsegObjc', :git => "https://github.com/younthu/mmsegObjc"
+pod 'mmsegObjc'
 ```
 
 Sample code
