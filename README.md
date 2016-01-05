@@ -5,6 +5,8 @@ rmmseg-cpp is Chinese word segmentation library for Ruby in C++,https://github.c
 
 Supports both iOS and OSX.
 
+latest mmsegObjc is based on rmmseg-cpp-0.2.9, https://github.com/pluskid/rmmseg-cpp/tree/rmmseg-cpp-0.2.9 .
+
 # Usage
 Install via pod
 ```
@@ -33,3 +35,4 @@ Sample code
 
 1. 2016/01/02, The sample compiles and run well. Next, create a pod spec for it.
 2. 2016/01/04, mmsegObjc is ready for release.
+3. 2016/01/05, latest mmsegObjc is based on rmmseg-cpp-0.2.9, https://github.com/pluskid/rmmseg-cpp.
