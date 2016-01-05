@@ -12,7 +12,7 @@ Supports both iOS and OSX.
 
 **Version** 
 
-latest mmsegObjc is based on rmmseg-cpp-0.2.9, https://github.com/pluskid/rmmseg-cpp/tree/rmmseg-cpp-0.2.9 .
+Latest mmsegObjc is based on rmmseg-cpp-0.2.9, https://github.com/pluskid/rmmseg-cpp/tree/rmmseg-cpp-0.2.9 .
 
 # Usage
 Install via pod
