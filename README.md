@@ -25,18 +25,34 @@ Sample code
 ```objc
 #import <MMSegObjC/MMsegObjC.h>
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (void)testGetTokenStrings {
+    // Init mmseg
+    NSArray<NSString*> *arr = [MMSegObjC getTokenStringsFromString:@"我们都喜欢用 Ruby"];
     
+    for (NSString *str in arr) {
+        NSLog(@"%@", str); // 我们 都 喜欢 用 Ruby
+    }
+}
+
+- (void)testGetTokens {
+    NSArray<MMSToken*> *tokens = [MMSegObjC getTokensFromString:@"你妈妈叫什么名字, baby"];
     
-    NSArray<NSString*> *arr = [MMSegObjC getTokensFromString:@"我们都喜欢用 Ruby"];
-    
-    for (NSString *token in arr) {
-        NSLog(@"%@", token); // 我们 都 喜欢 用 Ruby
+    for (MMSToken *t in tokens) {
+        NSLog(@"%@:%@", NSStringFromRange(t.range), t.text);
+        //{0, 1}:你
+        //{1, 2}:妈妈
+        //{3, 1}:叫
+        //{4, 2}:什么
+        //{6, 2}:名字
+        //{10, 4}:baby
     }
 }
 ```
+
+You can download the source code and try to run those unit tests in project MMSegObjC.xcodeproj.
+
+Also, there is sample project with 'pod' integrated.
+
 # Dictionaries
 As far as v0.0.3, we used dictionaries from rmmseg-cpp, the pod will install dictonaries by default.
 
