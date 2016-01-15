@@ -7,12 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8271DC301C48D27100B03B44 /* MMSegObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8271DC2F1C48D27100B03B44 /* MMSegObjCTests.m */; };
+		8271DC321C48D27100B03B44 /* libMMSegObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C5AABB1C33FDDD00A7564F /* libMMSegObjC.a */; };
+		8271DC391C48D35900B03B44 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8271DC381C48D35900B03B44 /* libstdc++.tbd */; };
+		8271DC3C1C48D50000B03B44 /* words.dic in Resources */ = {isa = PBXBuildFile; fileRef = 82A38CE51C3776F300FA287D /* words.dic */; };
+		8271DC3D1C48D50000B03B44 /* chars.dic in Resources */ = {isa = PBXBuildFile; fileRef = 82A38CE61C3776F300FA287D /* chars.dic */; };
+		8271DC401C48D60000B03B44 /* MMSToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 8271DC3F1C48D60000B03B44 /* MMSToken.m */; };
 		82C5AABF1C33FDDD00A7564F /* MMSegObjC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 82C5AABE1C33FDDD00A7564F /* MMSegObjC.h */; };
 		82C5AAC11C33FDDD00A7564F /* MMSegObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 82C5AAC01C33FDDD00A7564F /* MMSegObjC.mm */; };
 		82C5AAD51C33FE4400A7564F /* algor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82C5AAC91C33FE4400A7564F /* algor.cpp */; };
 		82C5AAD61C33FE4400A7564F /* dict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82C5AACC1C33FE4400A7564F /* dict.cpp */; };
 		82C5AAD71C33FE4400A7564F /* memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82C5AACF1C33FE4400A7564F /* memory.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8271DC331C48D27100B03B44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82C5AAB31C33FDDD00A7564F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82C5AABA1C33FDDD00A7564F;
+			remoteInfo = MMSegObjC;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		82C5AAB91C33FDDD00A7564F /* CopyFiles */ = {
@@ -28,6 +44,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8271DC2D1C48D27100B03B44 /* MMSegObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMSegObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8271DC2F1C48D27100B03B44 /* MMSegObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMSegObjCTests.m; sourceTree = "<group>"; };
+		8271DC311C48D27100B03B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8271DC381C48D35900B03B44 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		8271DC3E1C48D60000B03B44 /* MMSToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSToken.h; sourceTree = "<group>"; };
+		8271DC3F1C48D60000B03B44 /* MMSToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSToken.m; sourceTree = "<group>"; };
 		82A38CE51C3776F300FA287D /* words.dic */ = {isa = PBXFileReference; explicitFileType = compiled; fileEncoding = 4; name = words.dic; path = data/words.dic; sourceTree = "<group>"; };
 		82A38CE61C3776F300FA287D /* chars.dic */ = {isa = PBXFileReference; explicitFileType = compiled; fileEncoding = 4; name = chars.dic; path = data/chars.dic; sourceTree = "<group>"; };
 		82C5AABB1C33FDDD00A7564F /* libMMSegObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMSegObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +68,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8271DC2A1C48D27100B03B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8271DC391C48D35900B03B44 /* libstdc++.tbd in Frameworks */,
+				8271DC321C48D27100B03B44 /* libMMSegObjC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82C5AAB81C33FDDD00A7564F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,13 +87,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8271DC2E1C48D27100B03B44 /* MMSegObjCTests */ = {
+			isa = PBXGroup;
+			children = (
+				8271DC2F1C48D27100B03B44 /* MMSegObjCTests.m */,
+				8271DC311C48D27100B03B44 /* Info.plist */,
+			);
+			path = MMSegObjCTests;
+			sourceTree = "<group>";
+		};
 		82C5AAB21C33FDDD00A7564F = {
 			isa = PBXGroup;
 			children = (
+				8271DC381C48D35900B03B44 /* libstdc++.tbd */,
 				82A38CE51C3776F300FA287D /* words.dic */,
 				82A38CE61C3776F300FA287D /* chars.dic */,
 				82C5AAC71C33FE4400A7564F /* ext */,
 				82C5AABD1C33FDDD00A7564F /* MMSegObjC */,
+				8271DC2E1C48D27100B03B44 /* MMSegObjCTests */,
 				82C5AABC1C33FDDD00A7564F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				82C5AABB1C33FDDD00A7564F /* libMMSegObjC.a */,
+				8271DC2D1C48D27100B03B44 /* MMSegObjCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +123,8 @@
 			children = (
 				82C5AABE1C33FDDD00A7564F /* MMSegObjC.h */,
 				82C5AAC01C33FDDD00A7564F /* MMSegObjC.mm */,
+				8271DC3E1C48D60000B03B44 /* MMSToken.h */,
+				8271DC3F1C48D60000B03B44 /* MMSToken.m */,
 			);
 			path = MMSegObjC;
 			sourceTree = "<group>";
@@ -112,6 +157,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8271DC2C1C48D27100B03B44 /* MMSegObjCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8271DC371C48D27100B03B44 /* Build configuration list for PBXNativeTarget "MMSegObjCTests" */;
+			buildPhases = (
+				8271DC291C48D27100B03B44 /* Sources */,
+				8271DC2A1C48D27100B03B44 /* Frameworks */,
+				8271DC2B1C48D27100B03B44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8271DC341C48D27100B03B44 /* PBXTargetDependency */,
+			);
+			name = MMSegObjCTests;
+			productName = MMSegObjCTests;
+			productReference = 8271DC2D1C48D27100B03B44 /* MMSegObjCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		82C5AABA1C33FDDD00A7564F /* MMSegObjC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82C5AAC41C33FDDD00A7564F /* Build configuration list for PBXNativeTarget "MMSegObjC" */;
@@ -138,6 +201,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = FoolDragon;
 				TargetAttributes = {
+					8271DC2C1C48D27100B03B44 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					82C5AABA1C33FDDD00A7564F = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -156,11 +222,32 @@
 			projectRoot = "";
 			targets = (
 				82C5AABA1C33FDDD00A7564F /* MMSegObjC */,
+				8271DC2C1C48D27100B03B44 /* MMSegObjCTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		8271DC2B1C48D27100B03B44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8271DC3C1C48D50000B03B44 /* words.dic in Resources */,
+				8271DC3D1C48D50000B03B44 /* chars.dic in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		8271DC291C48D27100B03B44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8271DC301C48D27100B03B44 /* MMSegObjCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82C5AAB71C33FDDD00A7564F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,13 +255,42 @@
 				82C5AAD71C33FE4400A7564F /* memory.cpp in Sources */,
 				82C5AAC11C33FDDD00A7564F /* MMSegObjC.mm in Sources */,
 				82C5AAD51C33FE4400A7564F /* algor.cpp in Sources */,
+				8271DC401C48D60000B03B44 /* MMSToken.m in Sources */,
 				82C5AAD61C33FE4400A7564F /* dict.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8271DC341C48D27100B03B44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82C5AABA1C33FDDD00A7564F /* MMSegObjC */;
+			targetProxy = 8271DC331C48D27100B03B44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		8271DC351C48D27100B03B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MMSegObjCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fooldragon.MMSegObjCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8271DC361C48D27100B03B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MMSegObjCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fooldragon.MMSegObjCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		82C5AAC21C33FDDD00A7564F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -276,6 +392,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8271DC371C48D27100B03B44 /* Build configuration list for PBXNativeTarget "MMSegObjCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8271DC351C48D27100B03B44 /* Debug */,
+				8271DC361C48D27100B03B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		82C5AAB61C33FDDD00A7564F /* Build configuration list for PBXProject "MMSegObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

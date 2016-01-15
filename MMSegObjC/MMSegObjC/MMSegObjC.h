@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MMSToken.h"
 
 @interface MMSegObjC : NSObject
 + (void)initializeEngine;
-+ (NSArray<NSString*> *)getTokensFromString:(NSString*)text;
++ (NSArray<NSString*> *)getTokenStringsFromString:(NSString*)text;
++ (NSArray<MMSToken *> *)getTokensFromString:(NSString*)text;
 @end

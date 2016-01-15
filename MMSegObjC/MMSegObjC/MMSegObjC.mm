@@ -9,8 +9,15 @@
 #import "MMSegObjC.h"
 #import "algor.h"
 #import "dict.h"
+#import "token.h"
+
 using namespace rmmseg;
 
+#pragma mark - Helpers pre-define
+
+MMSToken *mmstokenFromToken(Token &token, int loc);
+
+#pragma mark - MMSegObjc Implementation
 
 @implementation MMSegObjC
 
@@ -34,14 +41,39 @@ using namespace rmmseg;
 + (void)initializeEngine{
     
    // Load dictionaries(chars&words)
-    NSString *builtInChars = [[NSBundle mainBundle] pathForResource:@"chars" ofType:@"dic"];
-    NSString *builtInWords = [[NSBundle mainBundle] pathForResource:@"words" ofType:@"dic"];
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSString *builtInChars = [bundle pathForResource:@"chars" ofType:@"dic"];
+    NSString *builtInWords = [bundle pathForResource:@"words" ofType:@"dic"];
+    NSAssert(nil != builtInChars, @"dict for chars not found");
+    NSAssert(nil != builtInWords, @"dict for words not found");
     rmmseg::dict::load_chars([builtInChars cStringUsingEncoding:NSUTF8StringEncoding]);
     rmmseg::dict::load_words([builtInWords cStringUsingEncoding:NSUTF8StringEncoding]);
     
 }
 
-+ (NSArray<NSString*> *)getTokensFromString:(NSString*)text{
+
++ (NSArray<MMSToken *> *)getTokensFromString:(NSString*)text{
+    const char * charBase = text.UTF8String;
+    rmmseg::Algorithm algo = rmmseg::Algorithm(charBase,(int)strlen(text.UTF8String));
+    
+    NSMutableArray<MMSToken *> *result = [NSMutableArray array];
+    
+    while (true) {
+        Token t = algo.next_token();
+        
+        if (t.text == 0) {
+            break;
+        }
+        
+        // TODO: this is not so efficient to get the length of utf string this way.
+        NSString *preString = [[NSString alloc]initWithBytes:charBase length:t.text - charBase encoding:NSUTF8StringEncoding];
+        [result addObject:mmstokenFromToken(t, preString.length)];
+    }
+    
+    return result;
+
+}
++ (NSArray<NSString*> *)getTokenStringsFromString:(NSString*)text{
     rmmseg::Algorithm algo = rmmseg::Algorithm(text.UTF8String,(int)strlen(text.UTF8String));// don't use test.length, it returns count of characters instead of bytes.
     
     NSMutableArray<NSString*> *result = [NSMutableArray array];
@@ -80,3 +112,12 @@ using namespace rmmseg;
     return outStr;
 }
 @end
+
+#pragma mark - helpers
+MMSToken *mmstokenFromToken(Token &token, int loc){
+    MMSToken *mmsTok = [MMSToken new];
+    mmsTok.text = [[NSString alloc]initWithBytes:token.text length:token.length encoding:NSUTF8StringEncoding];
+    mmsTok.range = NSMakeRange(loc, mmsTok.text.length);
+    
+    return mmsTok;
+}

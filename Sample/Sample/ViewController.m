@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     // Init mmseg
-    NSArray<NSString*> *arr = [MMSegObjC getTokensFromString:@"我们都喜欢用 Ruby"];
+    NSArray<NSString*> *arr = [MMSegObjC getTokenStringsFromString:@"我们都喜欢用 Ruby"];
     
     for (NSString *str in arr) {
         NSLog(@"%@", str);
